@@ -27,17 +27,20 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" flex justify-between items-center px-4 w-full h-20 bg-myBlue text-white fixed z-50">
+      <div
+        className=" flex justify-between items-center px-4 
+       bg-myBlue text-white fixed z-50  w-full h-20 "
+      >
         <Fade top>
-          <div className="mb-[20px]">
-            <h1 className=" text-5xl ml-2 text-white">KP</h1>
+          <div className="mb-[10px]">
+            <h1 className="text-5xl ml-2 text-white">KP</h1>
           </div>
 
           <ul className="hidden md:flex">
             {links.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-110 duration-200"
+                className="px-4 cursor-pointer  text-white font-medium  hover:scale-110 capitalize duration-200"
               >
                 <Link to={link} smooth duration={2000}>
                   {link}
@@ -58,7 +61,7 @@ const Navbar = () => {
               <ul className="text-2xl text-white">
                 {links.map(({ id, link }) => (
                   <li
-                    className="cursor-pointer mb-[10px]"
+                    className="cursor-pointer mb-[10px] capitalize"
                     key={id}
                     onClick={() => openMenu(!menu)}
                   >

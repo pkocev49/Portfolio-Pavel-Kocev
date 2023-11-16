@@ -1,6 +1,9 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import SocialButtonsContainer from "react-social-media-buttons"; // Make sure the import is correct
 import { SocialIcon } from "react-social-icons";
+
+// Define the Contact component
 const Contact = () => (
   <footer name="contact" className=" bg-aboutMeBG text-white py-4">
     <Fade bottom>
@@ -16,20 +19,21 @@ const Contact = () => (
         </p>
       </div>
       <div className="flex justify-center">
-        <SocialIcon
-          url="https://www.linkedin.com/in/pavel-kocev-010775269/"
-          target="_blank"
-          rel="noopener noreferrer"
-        />
-        <SocialIcon
-          url="https://github.com/pkocev49"
-          target="_blank"
-          rel="noopener noreferrer"
-        />
-        <SocialIcon
-          url="https://www.instagram.com/kocev.pavel"
-          target="_blank"
-          rel="noopener noreferrer"
+        <SocialButtonsContainer
+          links={[
+            "https://www.linkedin.com/in/pavel-kocev-010775269/",
+            "https://github.com/pkocev49",
+            "https://www.instagram.com/kocev.pavel/",
+          ]}
+          buttonStyle={{
+            width: "31px",
+            height: "31px",
+            margin: "0px 5px",
+            backgroundColor: "#cce7ff",
+            borderRadius: "30%",
+          }}
+          iconStyle={{ color: "#134d8b" }}
+          openNewTab={true}
         />
       </div>
     </Fade>

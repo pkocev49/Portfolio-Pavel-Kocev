@@ -5,9 +5,12 @@ const Home = () => {
   return (
     <>
       <section id="home">
-        <div className="p-5 h-screen w-full mb-[50px] flex justify-center items-center flex-col lg:flex-row lg:justify-evenly ">
-          <div left className="lg:w-1/2 2xl:w-[800px] 4xl:w-[1000px]">
-            <Fade left>
+        <div
+          className="p-5 h-screen w-full mb-[50px] flex justify-center items-center flex-col
+         lg:flex-row lg:justify-evenly "
+        >
+          <div className="w-[300px] lg:w-1/2 2xl:w-[800px] 4xl:w-[1000px]">
+            <Fade top>
               <h1 className="text-black text-2xl font-bold md:text-3xl  4xl:text-4xl 16xl:text-5xl">
                 Crafting Digital Excellence, One Line of Code at a Time.
               </h1>
@@ -21,7 +24,7 @@ const Home = () => {
             </Fade>
           </div>
           <div>
-            <Fade right>
+            <Fade left>
               <img
                 className=" mt-[30px] w-[200px] h-[200px] object-cover rounded-full  sm:w-[300px] sm:h-[300px] 4xl:w-[400px] 4xl:h-[400px] 16xl:w-[500px] 16xl:h-[500px]"
                 src={image}

@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="bg-aboutMeBG h-full w-full mb-[50px] md:h-screen  flex justify-center items-center flex-col 
+        className="bg-aboutMeBG h-full w-full mb-[50px] md:h-full  xl:h-screen  flex justify-center items-center flex-col 
          "
       >
         <Fade top>
@@ -17,7 +17,7 @@ const About = () => {
           </h1>
         </Fade>
         <div className=" p-5 xl:flex xl:justify-around xl:w-[1100px] 2xl:w-[1400px] 8xl:w-[1500px] ">
-          <div className="xl:text-1xl xl:w-[400px] 4xl:text-1xl ">
+          <div className="w-[300px] xl:text-1xl xl:w-[400px] 4xl:text-1xl ">
             <Fade left>
               <p className="text-white ">
                 Hello, I'm Pavel Kocev, a passionate Full-Stack Web Developer
@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className=" text-white mt-[30px] xl:mt-0  ">
             <h3 className="text-2xl font-bold  ">My Skills:</h3>
-            <div className="flex flex-wrap   w-[350px] justify-evenly space-y-3  xl:mt-[30px]">
+            <div className="flex flex-wrap   w-[300px] justify-evenly space-y-3  xl:mt-[30px]">
               <Fade right>
                 <p className="w-[100px] h-full mt-[12px] p-2 border-[1px] rounded-[5px]">
                   HTML
