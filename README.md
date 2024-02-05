@@ -1,3 +1,3 @@
 Hello There,
-This is my personal Portfolio
+This is my Portfolio:
 Demo link:https://kocev-pavel.netlify.app/
