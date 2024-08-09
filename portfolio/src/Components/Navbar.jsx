@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Fade } from "react-reveal";
 const Navbar = () => {
   const [menu, openMenu] = useState(false);
 
@@ -31,24 +30,22 @@ const Navbar = () => {
         className=" flex justify-between items-center px-4 
        bg-myBlue text-white fixed z-50  w-full h-20 "
       >
-        <Fade top>
-          <div className="mb-[10px]">
-            <h1 className="text-5xl ml-2 text-white">KP</h1>
-          </div>
+        <div className="mb-[10px]">
+          <h1 className="text-5xl ml-2 text-white">KP</h1>
+        </div>
 
-          <ul className="hidden md:flex">
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="px-4 cursor-pointer  text-white font-medium  hover:scale-110 capitalize duration-200"
-              >
-                <Link to={link} smooth duration={2000}>
-                  {link}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Fade>
+        <ul className="hidden md:flex">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer  text-white font-medium  hover:scale-110 capitalize duration-200"
+            >
+              <Link to={link} smooth duration={2000}>
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <div
           onClick={() => openMenu(!menu)}
           className="cursor-pointer pr-4 z-10 text-white md:hidden"
@@ -71,7 +68,7 @@ const Navbar = () => {
                       smooth
                       duration={2000}
                     >
-                      <Fade left>{link}</Fade>
+                      {link}
                     </Link>
                   </li>
                 ))}
