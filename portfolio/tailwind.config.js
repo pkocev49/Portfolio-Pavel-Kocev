@@ -16,6 +16,10 @@ export default {
         myBlue: "#6c2fe3",
         aboutMeBG: "#4f20ae",
         btnColor: "#712ef8",
+        neutral: {
+          750: "#3E3E3E",
+          850: "#6c2fe3",
+        },
       },
     },
     screens: {
